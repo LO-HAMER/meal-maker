@@ -1,8 +1,12 @@
 const menu = {
-    _meal: '',
-    _price: 0
+  _meal: '',
+  _price: 0,
+
+  set meal (mealToCheck) {
+  if (typeof mealToCheck === 'String') {
+    return this._meal = mealToCheck
   }
-  
-  menu._meal= 1;
-  menu._price = 'wrap';
-  console.log(menu)
+}
+}
+
+
